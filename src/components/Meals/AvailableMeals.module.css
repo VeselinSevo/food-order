@@ -1,0 +1,60 @@
+.meals {
+    max-width: 60rem;
+    width: 100%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+  }
+  
+  .meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font: inherit;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #1ba1a1;
+    color: #1ba1a1;
+    padding: 0.25rem 2rem;
+    border-radius: 2px;
+    font-weight: bold;
+  }
+  
+  button:hover,
+  button:active {
+    background-color: #f3f2f2;
+    border-color: #f3f2f2;
+  }
+
+  .highlighted {
+    background-color: #ccc;
+    border: 1px solid transparent;
+  }
+
+  .default {
+    background-color: #fff;
+  }
+
+  .loading {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  @keyframes meals-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
